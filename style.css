@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Efeito de leve aumento ao passar o mouse */
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #007BFF; /* Azul no título */
+}
+
+#contador {
+    font-weight: bold;
+    font-size: 4em;
+    color: #007BFF; /* Cor azul padrão */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.negative {
+    color: #d32f2f; /* Vermelho intenso para números negativos */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 10px;
+    border: none;
+    border-radius: 30px; /* Bordas bem arredondadas */
+    background-color: #007BFF; /* Azul */
+    color: white; /* Texto branco */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    outline: none; /* Remove a borda ao focar */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    transform: translateY(-2px); /* Levanta o botão */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao passar o mouse */
+}
+
+button:active {
+    background-color: #004494; /* Azul ainda mais escuro */
+    transform: translateY(0); /* Retorna à posição original */
+}
+
+/* Estilos para responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    #contador {
+        font-size: 3em;
+    }
+    
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
